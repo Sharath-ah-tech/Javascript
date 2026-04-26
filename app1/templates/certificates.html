@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% block content %}
+<style>
+    ul{
+        list-style-type: none;
+    }
+    li{
+        padding: 5px;
+    }
+    .c{
+        color:white;
+        border-style: 1px solid;
+        border-color: white;
+        border-radius: 5px;
+    }
+</style>
+    <h1 class="head">Certificates</h1>
+    <h2 class="b">Here are some of my certifications:</h2>
+    <ul class="b">
+        <li><h3 class="c">CISCO Networking</h3>
+            <li>Python Essentials-1</li>
+            <li>Python Essentials-2</li>
+            <li>Cisco Networking</li>
+        </li>
+        <li><h3 class="c">NPTEL</h3>
+           <li>Educational Leadership</li>
+            <li>Data analytics with python</li>
+        </li>
+    </ul>
+{% endblock %}

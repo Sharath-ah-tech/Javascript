@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% block content %}
+<style>
+    ul{
+        list-style-type: none;
+    }
+    li{
+        padding: 5px;
+    }
+    .c{
+        color:white;
+
+    }
+</style>
+    <h1 class="head">Skills</h1>
+    <h2 class="b">Here are some of my skills:</h2>
+    <ul class="b">
+        <li><h3 class="c">Programming Languages</h3>
+             <li>Python</li>
+             <li>HTML</li>
+             <li>CSS</li>
+
+        </li>
+        <li><h3 class="c">Frameworks</h3>
+            <li>Django</li>
+            <li>React</li>
+        </li>
+        <li><h3 class="c">Database Management</h3>
+            <li>MySQL</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+        </li>
+        <li><h3 class="c">Version Control</h3>
+            <li>Git</li>
+        </li>
+        <li><h3 class="c">Problem Solving and Debugging</h3></li>
+        <li><h3 class="c">Apps and tools</h3>
+            <li>Visual Studio Code</li>
+            <li>PyCharm</li>
+            <li>Postman</li>
+            <li>Microsoft Word</li>
+            <li>Microsoft Powerpoint</li>
+        </li>
+    </ul>
+{% endblock %}
